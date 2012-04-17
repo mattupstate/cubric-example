@@ -1,0 +1,17 @@
+user = ubuntu
+key_filename = /path/to/your/key
+#host_string = to be added later
+
+provider = amazon
+server = cubric.contrib.servers.ubuntu.default.Server
+app_context = cubric.contrib.servers.ubuntu.default.WsgiApplicationContext
+
+environment = production
+branch = master
+
+ec2_key = your_ec2_key
+ec2_secret = your_ec2_secret
+ec2_ami = ami-fd589594
+ec2_keypair = keypair_name
+ec2_secgroups = security_group_name
+ec2_instancetype = t1.micro

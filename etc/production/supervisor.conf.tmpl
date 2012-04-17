@@ -1,0 +1,16 @@
+[program:%(name)s]
+command=/usr/local/bin/uwsgi
+  --socket %(run_dir)s/uwsgi.sock
+  --logto %(log_dir)s/uwsgi.log
+  --home %(virtualenv)s
+  --pythonpath %(src_dir)s
+  --wsgi-file %(src_dir)s/%(wsgi_file)s
+  --callable %(wsgi_callable)s
+  --max-requests 1000
+  --master
+  --processes 1
+  --chmod
+directory=%(src_dir)s
+user=%(user)s
+autostart=true
+autorestart=true

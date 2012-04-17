@@ -1,0 +1,19 @@
+server {
+    listen       80;
+    server_name  localhost;
+    
+    access_log  %(log_dir)s/access.log;
+    error_log %(log_dir)s/error.log;
+    
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:%(run_dir)s/uwsgi.sock;
+    }
+    
+    location /static {
+        alias %(src_dir)s/example_app/static;
+        expires 1y;
+        add_header Cache-Control "public";
+    }
+    
+}

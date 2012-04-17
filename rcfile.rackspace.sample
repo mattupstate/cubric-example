@@ -1,0 +1,15 @@
+user = root
+#host_string = to be added later
+
+provider = rackspace
+server = cubric.contrib.servers.ubuntu.default.Server
+app_context = cubric.contrib.servers.ubuntu.default.WsgiApplicationContext
+
+environment = production
+branch = master
+
+rackspace_username = your_rackspace_username
+rackspace_apikey = your_rackspace_apikey
+rackspace_servername = ubuntu-server
+rackspace_image = 112
+rackspace_flavor = 1
