@@ -7,18 +7,22 @@ This Flask/WSGI application illustrates how to use Cubric for deployment. Perfor
     $ git clone https://mattupstate@github.com/mattupstate/cubric_example.git
     $ cd cubric_example
 
-### 2. Copy the sample rcfile for the provider you wish to use
+### 2. Install Cubric
+
+    $ pip install https://github.com/mattupstate/cubric/tarball/develop
+
+### 3. Copy the sample rcfile for the provider you wish to use
 
 Replace `<provider>` with either `ec2` or `rackspace`
 
     $ cp rcfile.<provider>.sample rcfile.<provider>
 
-### 3. Modify the rcfile values to match those of your AWS or Rackspace account
+### 4. Modify the rcfile values to match those of your AWS or Rackspace account
 
-### 4. Create the server and deploy the application in one line
+### 5. Create the server and deploy the application in one line
 
 Replace `<provider>` with either `ec2` or `rackspace`:
 
     $ fab -c rcfile.<provider> create_server create_app_context deploy
 
-### 5. Open the public DNS or IP address in your browser!
+### 6. Open the public DNS or IP address in your browser!
