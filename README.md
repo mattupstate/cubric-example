@@ -4,7 +4,7 @@ This Flask/WSGI application illustrates how to use Cubric for deployment. Perfor
 
 ### 1. Clone the repository
 
-    $ git clone https://mattupstate@github.com/mattupstate/cubric_example.git
+    $ git clone git://github.com/mattupstate/cubric_example.git
     $ cd cubric_example
 
 ### 2. Install Cubric
