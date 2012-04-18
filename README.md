@@ -10,6 +10,16 @@ This Flask/WSGI application illustrates how to use Cubric for deployment. Perfor
 ### 2. Install Cubric
 
     $ pip install https://github.com/mattupstate/cubric/tarball/develop
+    
+### 3. Install your provider library
+
+Amazon/EC2
+
+    $ pip install boto
+    
+Rackspace
+
+    $ pip install python-cloudservers
 
 ### 3. Copy the sample rcfile for the provider you wish to use
 
