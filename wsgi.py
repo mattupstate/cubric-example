@@ -1,6 +1,4 @@
-import example_app
-
-application = example_app.create_app()
+from example_app import app
 
 if __name__ == "__main__":
-    application.run()
+    app.run()

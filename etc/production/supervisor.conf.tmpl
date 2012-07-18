@@ -10,6 +10,7 @@ command=/usr/local/bin/uwsgi
   --master
   --processes 1
   --chmod
+environment=FLASK_ENV=%(environment)s
 directory=%(src_dir)s
 user=%(user)s
 autostart=true
